@@ -2,7 +2,17 @@ import java.util.*;
 
 public class Lucky_Numbers_in_a_Matrix {
     public static void main(String[] args) {
-        int[][] matrix = {{3, 7, 8}, {9, 11, 13}, {15, 16, 17}};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of rows and columns of the matrix");
+        int n = sc.nextInt();
+        int[][] matrix = new int[n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                System.out.println("Enter the element at position " + i + "," + j);
+                matrix[i][j] = sc.nextInt();
+            }
+        }
+        System.out.println("Lucky numbers in the matrix are:");
         List<Integer> list = new ArrayList<Integer>();
         for(int i=0;i<matrix.length;i++){
             for(int j=0;j<matrix[0].length;j++){

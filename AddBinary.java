@@ -1,9 +1,13 @@
 import java.math.BigInteger;
+import java.util.Scanner;
 
 public class AddBinary{
     public static void main(String[] args){
-        String a = "10100000100100110110010000010101111011011001101110111111111101000000101111001110001111100001101";
-        String b = "1011";
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first binary number: ");
+        String a = sc.nextLine();
+        System.out.print("Enter second binary number: ");
+        String b = sc.nextLine();
         BigInteger a1 = new BigInteger(a, 2);
         BigInteger b1 = new BigInteger(b, 2);
         BigInteger sum = a1.add(b1);

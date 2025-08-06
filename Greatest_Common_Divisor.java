@@ -1,7 +1,12 @@
+import java.util.Scanner;
+
 public class Greatest_Common_Divisor {
     public static void main(String[] args) {
-        String str1 = "ABCABC";
-        String str2 = "ABC";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first string:");
+        String str1 = sc.nextLine();
+        System.out.println("Enter the second string:");
+        String str2 = sc.nextLine();
         System.out.println(gcdOfStrings(str1, str2));
     }
 

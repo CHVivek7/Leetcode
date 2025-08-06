@@ -1,4 +1,4 @@
-public class a {
+public class Magical_Number {
     public static void main(String[] args) {
         int n = 6;
         int count = 0;

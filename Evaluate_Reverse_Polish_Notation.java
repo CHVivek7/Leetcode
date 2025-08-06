@@ -1,8 +1,17 @@
+import java.util.Scanner;
 import java.util.Stack;
 
 public class Evaluate_Reverse_Polish_Notation {
     public static void main(String[] args) {
-        String[] tokens = {"2", "1", "+", "3", "*"};
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of tokens:");
+        int n = sc.nextInt();
+        sc.nextLine(); // Consume the newline character
+        String[] tokens = new String[n];
+        System.out.println("Enter the tokens (numbers or operators):");
+        for (int i = 0; i < n; i++) {
+            tokens[i] = sc.nextLine();
+        }
         System.out.println(evalRPN(tokens));
     }
 

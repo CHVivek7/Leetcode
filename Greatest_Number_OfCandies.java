@@ -1,10 +1,27 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Greatest_Number_OfCandies {
     public static void main(String[] args) {
-        int candies[] = {2, 3, 5, 1, 2};
-        int extraCandies = 3;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the number of candies:");
+        int n = sc.nextInt();
+        if (n <= 0) {
+            System.out.println("Invalid input");
+            return;
+        }
+        System.out.println("Enter the candies for each kid:");
+        int[] candies = new int[n];
+        for (int i = 0; i < n; i++) {
+            candies[i] = sc.nextInt();
+        }
+        System.out.println("Enter the number of extra candies:");
+        int extraCandies = sc.nextInt();
+        if (extraCandies < 0) {
+            System.out.println("Invalid input");
+            return;
+        }
         System.out.println(kidsWithCandies(candies, extraCandies));
     }
 

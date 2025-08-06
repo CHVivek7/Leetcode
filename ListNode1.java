@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MergeSortedList {
+public class ListNode1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the number of elements in the first list and the second list: ");

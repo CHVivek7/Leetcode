@@ -25,6 +25,13 @@ public class Delete_midde_Node {
         }
         prev.next = slow.next;
     }
+    public static void printList(Node head){
+        Node temp = head;
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp = temp.next;
+        }
+    }
 }
 class Node{
     int data;

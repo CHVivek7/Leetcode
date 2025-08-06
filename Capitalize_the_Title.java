@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Capitalize_the_Title {
     public static void main(String[] args){
-        String title = "The quick brown fox jumps over the lazy dog";
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the title:");
+
+        String title = sc.nextLine();
         char[] ch = title.toCharArray();
 		int len = ch.length;
 

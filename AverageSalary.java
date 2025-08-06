@@ -1,5 +1,4 @@
-import java.lang.reflect.Array;
-
+import java.util.*;
 public class AverageSalary {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -16,5 +15,6 @@ public class AverageSalary {
             sum+=salary[i];
         }
         System.out.println("The average salary of the employees is "+(sum/(n-2)));
+        sc.close();
     }
 }

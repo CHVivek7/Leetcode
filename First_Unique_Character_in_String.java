@@ -1,9 +1,17 @@
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class First_Unique_Character_in_String {
     public static void main(String[] args) {
-        String s = "aadadaacd";
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the string:");
+
+        String s = sc.nextLine();
+        if (s.isEmpty()) {
+            System.out.println("Invalid input");
+            return;
+        }
         System.out.println(firstUniqChar(s));
     }
 

@@ -12,7 +12,7 @@ public class RemoveDuplicates {
         
         nums = new int[set.size()];
         for(int i = 0; i < nums.length; i++){
-            nums[i] = set.toArray()[i];
+            nums[i] = (Integer) set.toArray()[i];
         }
         for(int num : nums){
             System.out.print(num + " ");

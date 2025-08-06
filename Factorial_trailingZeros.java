@@ -1,4 +1,3 @@
-import java.math.BigInteger;
 import java.util.Scanner;
 
 public class Factorial_trailingZeros {
