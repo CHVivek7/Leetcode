@@ -1,0 +1,14 @@
+public class Find_the_Highest_altitude {
+    public static void main(String[] args) {
+        int[] gain = {-5,1,5,0,-7};
+        int max = 0;
+        int sum = 0;
+        for(int i=0;i<gain.length;i++){
+            sum += gain[i];
+            if(sum > max){
+                max = sum;
+            }
+        }
+        System.out.println(max);
+    }
+}
